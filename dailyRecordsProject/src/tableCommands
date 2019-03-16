@@ -1,0 +1,5 @@
+create table newLedgers(name text NOT NULL, imageid long)
+
+create table expense(amount double, type text NOT NULL, item text NOT NULL, member text NOT NULL)
+
+create table income(amount double, type text NOT NULL, account text NOT NULL)

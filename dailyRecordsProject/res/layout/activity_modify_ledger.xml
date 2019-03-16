@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyLedgerActivity" 
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F57900"
+        android:id="@+id/linear1"
+        >
+        
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go_back"
+            android:text="modify ledger"
+            android:layout_centerInParent="true"
+            android:textColor="#AB4340"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_cab_done_holo_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ledger name:"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"/>
+        
+        <EditText 
+            android:id="@+id/et_name"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="PLease enter ledger name"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relative3"
+        android:layout_below="@id/linear2">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ledger cover:"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:id="@+id/arrow1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+			android:src="@drawable/icon_forum_bottom_tab_right_arrow"
+            />
+        <ImageView
+            android:layout_toLeftOf="@id/arrow1"
+			android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+			android:id="@+id/ledger_cover_image"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="10dp"
+			android:scaleType="fitEnd"
+			android:layout_marginBottom="10dp"
+            />
+        
+    </RelativeLayout>
+    
+    <GridView 
+        android:numColumns="3"
+        android:id="@+id/cover_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        ></GridView>
+    
+    
+</LinearLayout>

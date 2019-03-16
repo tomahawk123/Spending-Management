@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeOneExpenseActivity"
+    android:background="#DFD7CF"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F57900"
+        android:id="@+id/linear1"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go_back"
+			android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/abc_ic_ab_back_holo_dark" />
+
+        <Spinner
+            android:id="@+id/switch_expense"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#F57900"
+            android:spinnerMode="dropdown"
+            android:textColor="#AB4340" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/abc_ic_cab_done_holo_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:text="save"
+            android:layout_marginRight="10dp"
+            android:id="@+id/save_up"
+            android:textColor="#AB4340"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView 
+            android:layout_marginLeft="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/expense_camera_btn_normal"
+            />
+        <EditText 
+            android:id="@+id/et_exp_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#699536"
+            android:text="0.00"
+            android:background="#DFD7CF"
+            android:gravity="bottom"
+            android:layout_marginLeft="140dp"
+            android:textSize="40dp"
+            />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="90dp"
+        android:background="#9A9DA2"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="expense type:"
+	        android:layout_marginLeft="20dp"
+	        android:layout_centerVertical="true"
+	        />
+	    <Spinner
+	        android:id="@+id/sp_expense_type"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="50dp"
+	        android:spinnerMode="dropdown"
+	        android:background="#DFD7CF" />
+
+	    <TextView 
+	        android:id="@+id/add_expense_type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="+"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:textSize="20dp"
+	        />
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9A9DA2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:hint="items of expense"
+        android:background="#DFD7CF"
+        android:id="@+id/et_item_of_expense"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9A9DA2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        
+        <Spinner 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="#DFD7CF"
+	        android:gravity="center"
+	        android:id="@+id/account_expense"
+	        android:layout_marginLeft="20dp"
+	        android:spinnerMode="dropdown"
+        />
+        <TextView 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9A9DA2"
+            />
+        <Spinner 
+            android:id="@+id/sp_member"
+           	android:spinnerMode="dropdown" 
+            android:background="#DFD7CF"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9A9DA2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+    <TextView 
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/current_date"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9A9DA2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="other remarks:"
+        android:background="#DFD7CF"
+        android:id="@+id/remark_of_item"
+        android:gravity="top"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        
+        <Button 
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="save"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:background="#F57900"
+            android:id="@+id/save_down"
+            />
+        <Button 
+            android:id="@+id/more_record_expense"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#9A9DA2"
+            android:text="make more records"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        />
+</LinearLayout>
