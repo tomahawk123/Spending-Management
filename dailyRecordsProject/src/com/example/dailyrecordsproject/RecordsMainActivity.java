@@ -413,5 +413,5 @@ public class RecordsMainActivity extends Activity implements OnClickListener{
 
 }
 
-//登录的账本
-//default 不能删除
+
+//default cannot be deleted
